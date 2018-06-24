@@ -4,13 +4,17 @@ export default {
   /**
    * 获取所有城市列表
    */
-  getAllCityList: 'city'
+  getAllCityList: 'basic/city/list',
+  /**
+   * 更新城市状态
+   */
+  updateCity: 'basic/city/update'
 }
 
 /**
  * get 请求
  */
-export function get (url, params) {
+export function get(url, params) {
   return new Promise((resolve, reject) => {
     axios.get(url, params)
       .then(response => {
@@ -27,7 +31,7 @@ export function get (url, params) {
 /**
  * post 请求
  */
-export function post (url, params) {
+export function post(url, params) {
   return new Promise((resolve, reject) => {
     axios.post(url, params)
       .then(response => {
