@@ -27,7 +27,7 @@
       <el-table-column
         prop="url"
         label="url"
-        width="180">
+        width="1000">
       </el-table-column>
       <el-table-column
         prop="createTime"
