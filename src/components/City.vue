@@ -157,7 +157,6 @@
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 20px;
-
     background: #FFFFFF;
   }
 
@@ -191,7 +190,6 @@
     margin-left: 10px;
     margin-top: 8px;
     font-size: 20px;
-    text-shadow: 0 0 6px #ccc;
     font-weight: bold;
   }
 

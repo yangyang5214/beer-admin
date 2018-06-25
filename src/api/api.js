@@ -8,7 +8,11 @@ export default {
   /**
    * 更新城市状态
    */
-  updateCity: 'basic/city/update'
+  updateCity: 'basic/city/update',
+  /**
+   * 获取图片列表
+   */
+  getImageList: 'basic/image/list'
 }
 
 /**
