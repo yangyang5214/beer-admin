@@ -9,9 +9,8 @@
           <router-link id='city' to="/city">city</router-link>
         </li>
         <li>
-          <router-link id='bug' to="/bug">bug</router-link>
-        <li>
           <router-link id='me' to="/me">me</router-link>
+        </li>
         <li>
           <router-link id='image' to="/">image</router-link>
         </li>
@@ -36,7 +35,8 @@
     width: 100%;
     height: auto;
   }
-  .header-navigation{
+
+  .header-navigation {
     top: 0;
     width: 100%;
     height: 60px;

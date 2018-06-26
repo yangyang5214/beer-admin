@@ -4,7 +4,6 @@ import Login from '../components/Login'
 import Image from '../components/Image'
 import City from '../components/City'
 import Blog from '../components/Blog'
-import Bug from '../components/Bug'
 import Me from '../components/Me'
 import Home from '../components/Home'
 
@@ -31,10 +30,6 @@ export default new Router({
         {
           path: '/blog',
           component: Blog,
-        },
-        {
-          path: '/bug',
-          component: Bug,
         },
         {
           path: '/me',

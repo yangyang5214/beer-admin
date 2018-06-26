@@ -16,7 +16,19 @@ export default {
   /**
    * 删除图片
    */
-  deleteImage: 'basic/image/delete'
+  deleteImage: 'basic/image/delete',
+  /**
+   * blog  list
+   */
+  getBlogList: 'basic/blog/list',
+  /**
+   * update blog
+   */
+  updateBlog: 'basic/blog/update',
+  /**
+   * delete blog
+   */
+  deleteBlog: 'basic/blog/delete',
 }
 
 /**

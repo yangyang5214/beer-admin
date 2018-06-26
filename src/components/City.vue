@@ -92,7 +92,7 @@
         cityId: '',
         status: '',
         total: 0,
-        currentPage: 0,
+        currentPage: 1,
         cityList: [],
         dialogVisible: false,
         options: [{
