@@ -12,7 +12,11 @@ export default {
   /**
    * 获取图片列表
    */
-  getImageList: 'basic/image/list'
+  getImageList: 'basic/image/list',
+  /**
+   * 删除图片
+   */
+  deleteImage: 'basic/image/delete'
 }
 
 /**

@@ -27,7 +27,12 @@
       <el-table-column
         prop="url"
         label="url"
-        width="1000">
+        width="200">
+
+        <template slot-scope="scope">
+          <img :src="scope.row.url" alt="" style="width: 100px;height: auto">
+        </template>
+
       </el-table-column>
       <el-table-column
         prop="createTime"
@@ -39,7 +44,7 @@
         <template slot-scope="scope">
           <el-button
             size="mini"
-            @click=deleteImage(scope.row)>编辑
+            @click=deleteImage(scope.row)>删除
           </el-button>
         </template>
       </el-table-column>
@@ -122,8 +127,15 @@
           }
         )
       },
-      deleteImage() {
-
+      deleteImage(row) {
+        let params = {
+          imageId: row.id,
+          url: row.url,
+        }
+        this.$axios.get(this.$api.deleteImage, {params}).then(response => {
+            this.getImageList()
+          }
+        )
       }
     }
   }
