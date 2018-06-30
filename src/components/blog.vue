@@ -84,9 +84,15 @@
       width="30%">
 
       <div>
-        <label>blog：</label>
+        <label>图片：</label>
+        <el-input v-model="blogImage" class="form-item" placeholder="blogImage"></el-input>
+      </div>
+
+      <div>
+        <label>标题：</label>
         <el-input v-model="blogName" class="form-item" placeholder="blogName"></el-input>
       </div>
+
       <div>
         <label>type：</label>
         <el-select v-model="blogType" class="form-item">
@@ -98,6 +104,12 @@
           </el-option>
         </el-select>
       </div>
+
+      <div>
+        <label>remark：</label>
+        <el-input v-model="blogRemark" class="form-item" placeholder="blogRemark"></el-input>
+      </div>
+
       <span slot="footer" class="dialog-footer">
     <el-button @click="dialogVisible = false">取 消</el-button>
     <el-button type="primary" @click="addBlog">确 定</el-button>
@@ -117,6 +129,8 @@
         type: '',
         name: '',
         blogName: '',
+        blogImage: '',
+        blogRemark: '',
         blogId: null,
         dialogVisible: false,
         blogType: 'java知识点',
@@ -143,6 +157,8 @@
             blogId: this.blogId,
             type: this.blogType,
             name: this.blogName,
+            image: this.blogImage,
+            remark: this.blogRemark,
           }
         this.$axios.get(this.$api.updateBlog, {params}).then(response => {
             this.dialogVisible = false
@@ -204,7 +220,7 @@
 
   .form-item {
     margin: 10px;
-    width: 200px;
+    width: 300px;
   }
 
   .serarch-item {
