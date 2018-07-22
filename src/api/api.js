@@ -13,10 +13,32 @@ export default {
    * 获取图片列表
    */
   getImageList: 'basic/image/list',
+
+  /**
+   * 获取图片封面列表
+   */
+  getImageCoverList: 'basic/image/cover/list',
+
+  /**
+   * 保存图片封面
+   */
+  saveImageCover: 'basic/image/cover/save',
+
+
+  /**
+   * 更新图片封面
+   */
+  updateImageCover: 'basic/image/cover/update',
+
   /**
    * 删除图片
    */
   deleteImage: 'basic/image/delete',
+
+  /**
+   * 删除图片封面
+   */
+  deleteImageCover: 'basic/image/cover/delete',
   /**
    * blog  list
    */

@@ -19,11 +19,19 @@
       :data="imageList"
       style="width: 100%"
       max-height="650">
+
       <el-table-column
         prop="id"
         label="ID"
         width="180">
       </el-table-column>
+
+      <el-table-column
+        prop="url"
+        label="image"
+        width="1000">
+      </el-table-column>
+
       <el-table-column
         prop="url"
         label="url"

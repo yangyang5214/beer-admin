@@ -93,20 +93,15 @@
         <el-input v-model="blogName" class="form-item" placeholder="blogName"></el-input>
       </div>
 
-      <div>
-        <label>type：</label>
-        <el-select v-model="blogType" class="form-item">
-          <el-option
-            v-for="item in options"
-            :key="item.value"
-            :label="item.label"
-            :value="item.value">
-          </el-option>
-        </el-select>
-      </div>
 
       <div>
-        <label>remark：</label>
+        <label>类型：</label>
+        <el-input v-model="blogType" class="form-item" placeholder="blogType"></el-input>
+      </div>
+
+
+      <div>
+        <label>摘要：</label>
         <el-input v-model="blogRemark" class="form-item" placeholder="blogRemark"></el-input>
       </div>
 
@@ -133,18 +128,7 @@
         blogRemark: '',
         blogId: null,
         dialogVisible: false,
-        blogType: 'java知识点',
-        options: [{
-          value: 'java知识点',
-          label: 'java知识点'
-        }, {
-          value: 'sql',
-          label: 'sql'
-        }, {
-          value: 'bug',
-          label: 'bug'
-        },
-        ]
+        blogType: '',
       }
     },
     mounted: function () {

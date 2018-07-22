@@ -14,6 +14,9 @@
         <li>
           <router-link id='image' to="/">image</router-link>
         </li>
+        <li>
+          <router-link id='imageCover' to="/imageCover">imageCover</router-link>
+        </li>
       </ul>
     </div>
   </div>
