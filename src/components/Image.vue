@@ -79,7 +79,7 @@
         <el-upload
           class="image-upload"
           drag
-          action="http://localhost:8888/basic/image/add"
+          action="http://118.24.30.90:8080/beer/basic/image/add"
           :data="{type:imageType}"
           multiple>
           <i class="el-icon-upload"></i>
