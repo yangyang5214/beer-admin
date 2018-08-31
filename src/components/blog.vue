@@ -33,11 +33,6 @@
         label="名字"
         width="180">
       </el-table-column>
-      <el-table-column
-        prop="url"
-        label="url"
-        width="800">
-      </el-table-column>
 
       <el-table-column
         prop="url"
@@ -47,6 +42,13 @@
           <a :href="scope.row.url" target="_blank">github</a>
         </template>
       </el-table-column>
+
+      <el-table-column
+        prop="remark"
+        label="remark"
+        width="700">
+      </el-table-column>
+
 
       <el-table-column
         prop="type"
@@ -163,6 +165,7 @@
         this.dialogVisible = true
         this.blogId = row.id
         this.blogName = row.name
+        this.blogRemark = row.remark
       },
       handleCurrentChange(val) {
         this.currentPage = val
